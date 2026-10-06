@@ -1,38 +1,44 @@
-/* Base styles applied to all three boxes */
-div {
+body {
+    background-color: #222222;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.canvas {
+    background-color: #ffffff;
+    width: 600px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.box-one, .box-two, .box-three {
     height: 200px;
     width: 200px;
 }
 
-/* 1st Box Configuration */
 .box-one {
     background-color: cadetblue;
     padding: 20px;
     border: 10px solid black;
 }
 
-/* Fix the style of the <p> element to remove all margins */
 .box-one p {
     margin: 0;
 }
 
-/* 2nd Box Configuration */
 .box-two {
     background-color: gold;
     border-top: 20px solid black;
     border-bottom: 20px solid black;
     border-left: 10px solid black;
     border-right: 10px solid black;
-    
-    /* Shift right so its top-left corner touches the first box's bottom-right corner */
-    margin-left: 250px;
+    margin-left: 260px;
 }
 
-/* 3rd Box Configuration */
 .box-three {
     background-color: indianred;
     border: 10px solid black;
-    
-    /* Shift right so its top-left corner touches the second box's bottom-right corner */
-    margin-left: 470px;
+    margin-left: 40px;
 }
